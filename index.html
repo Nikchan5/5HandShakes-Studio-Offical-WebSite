@@ -1,83 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>5HandShakes Studio Official Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nikchan5 — 5HandShakes Studio Official Website</title>
 
-     <!-- SEO базовые мета-теги -->
-     <meta name="description" content="Official website of 5HandShakes Studio — creative indie games, code experiments, and portfolio by Nikita Ulybyshev.">
-     <meta name="keywords" content="5HandShakes Studio,Eloen Dune, Nikchan5">
-     <meta name="author" content="Nikchan5">
-     <meta name="robots" content="index, follow">
+  <!-- SEO -->
+  <meta name="description" content="Official website of 5HandShakes Studio — creative indie games, code experiments, and portfolio by Nikita Ulybyshev." />
+  <meta name="keywords" content="5HandShakes Studio,Eloen Dune,Nikchan5" />
+  <meta name="author" content="Nikchan5" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://nikchan5.github.io/5handshakes-website/" />
 
-     <!-- Канонический URL -->
-     <link rel="canonical" href="https://nikchan5.github.io/5handshakes-website/">
+  <!-- Social -->
+  <meta property="og:title" content="5HandShakes Studio - Indie Games and Projects" />
+  <meta property="og:description" content="Explore original indie games, portfolio, and development projects from Nikita Ulybyshev." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nikchan5.github.io/5handshakes-website/" />
+  <meta property="og:image" content="https://nikchan5.github.io/5handshakes-website/logo.jpg" />
 
-     <!-- Open Graph для соцсетей -->
-     <meta property="og:title" content="5HandShakes Studio - Indie Games and Projects">
-     <meta property="og:description" content="Explore original indie games, portfolio, and development projects from Nikita Ulybyshev.">
-     <meta property="og:type" content="website">
-     <meta property="og:url" content="https://nikchan5.github.io/5handshakes-website/">
-     <meta property="og:image" content="https://nikchan5.github.io/5handshakes-website/logo.jpg">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="5HandShakes Studio - Indie Games and Projects" />
+  <meta name="twitter:description" content="Explore original indie games, portfolio, and dev experiments from Nikita Ulybyshev." />
+  <meta name="twitter:image" content="https://nikchan5.github.io/5handshakes-website/logo.jpg" />
 
-     <!-- Twitter Card -->
-     <meta name="twitter:card" content="summary_large_image">
-     <meta name="twitter:title" content="5HandShakes Studio - Indie Games and Projects">
-     <meta name="twitter:description" content="Explore original indie games, portfolio, and dev experiments from Nikita Ulybyshev.">
-     <meta name="twitter:image" content="https://nikchan5.github.io/5handshakes-website/logo.jpg">
-
-     <!-- Стили и иконка -->
-     <link rel="stylesheet" href="style.css">
-     <link rel="icon" href="favicon.png" type="image/png">
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.png" type="image/png" />
 </head>
 <body>
-     <header>
-          <div class="logo">
-               <img src="logo.jpg" alt="5HandShakes Studio Logo">
-          </div>
-          <nav>
-               <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#projects">Games</a></li>
-                    <li><a href="#github">GitHub</a></li>
-                    <li><a href="#socials">My Socials</a></li>
-               </ul>
-          </nav>
-     </header>
+  <header>
+    <div class="logo">
+      <img src="logo.jpg" alt="5HandShakes Studio Logo" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Games</a></li>
+        <li><a href="#github">GitHub</a></li>
+        <li><a href="#socials">My Socials</a></li>
+      </ul>
+    </nav>
+  </header>
 
-     <section id="home">
-          <h1>Welcome to 5HandShakes Studio</h1>
-          <p>Your go-to place for creative indie games and projects.</p>
-     </section>
+  <div class="theme-switcher">
+    <button onclick="setTheme('light')">☀️ Light</button>
+    <button onclick="setTheme('dark')">🌙 Dark</button>
+    <button onclick="setTheme('neon')">🟢 Neon</button>
+  </div>
 
-     <section id="projects">
-          <h2>My Games on Itch.io</h2>
-          <ul>
-               <li><a href="https://5handshakes-studio.itch.io/" target="_blank" rel="noopener noreferrer">Itch.io Profile</a></li>
-               <li><a href="https://5handshakes-studio.itch.io/time-parkour" target="_blank" rel="noopener noreferrer">Protocol Time</a></li>
-               <li><a href="https://5handshakes-studio.itch.io/ascii-adventure" target="_blank" rel="noopener noreferrer">ASCII Odyssey</a></li>
-               <li><a href="https://5handshakes-studio.itch.io/precision-shot" target="_blank" rel="noopener noreferrer">Precision Shot!</a></li>
-          </ul>
-     </section>
+  <section id="home">
+    <h1>Welcome to 5HandShakes Studio</h1>
+    <p>Your go-to place for creative indie games and projects.</p>
+  </section>
 
-     <section id="github">
-          <h2>GitHub</h2>
-          <p>Check out my code repositories:</p>
-          <a href="https://github.com/Nikchan5" target="_blank" rel="noopener noreferrer">Nikchan5</a>
-     </section>
+  <section id="projects">
+    <h2>My Games on Itch.io</h2>
+    <ul>
+      <li><a href="https://5handshakes-studio.itch.io/" target="_blank">Itch.io Profile</a></li>
+      <li><a href="https://5handshakes-studio.itch.io/time-parkour" target="_blank">Protocol Time</a></li>
+      <li><a href="https://5handshakes-studio.itch.io/ascii-adventure" target="_blank">ASCII Odyssey</a></li>
+      <li><a href="https://5handshakes-studio.itch.io/precision-shot" target="_blank">Precision Shot!</a></li>
+    </ul>
+  </section>
 
-     <section id="socials">
-          <h2>My Socials</h2>
-          <ul>
-               <li><a href="https://www.linkedin.com/in/nikita-ylybyshev-005b252a5/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-               <li><a href="https://bsky.app/profile/5handsnakes.bsky.social" target="_blank" rel="noopener noreferrer">Bluesky</a></li>
-               <li><a href="https://x.com/Nikchan5Dev" target="_blank" rel="noopener noreferrer">X (Twitter)</a></li>
-          </ul>
-     </section>
+  <section id="github">
+    <h2>GitHub</h2>
+    <p>Check out my code repositories:</p>
+    <a href="https://github.com/Nikchan5" target="_blank">Nikchan5</a>
+  </section>
 
-     <footer>
-          <p>&copy; 2025 5HandShakes Studio. All rights reserved.</p>
-     </footer>
+  <section id="socials">
+    <h2>My Socials</h2>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/nikita-ylybyshev-005b252a5/" target="_blank">LinkedIn</a></li>
+      <li><a href="https://bsky.app/profile/5handsnakes.bsky.social" target="_blank">Bluesky</a></li>
+      <li><a href="https://x.com/Nikchan5Dev" target="_blank">X (Twitter)</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 5HandShakes Studio. All rights reserved.</p>
+  </footer>
+
+  <!-- Theme Switcher Script -->
+  <script>
+    function setTheme(mode) {
+      document.body.classList.remove("light-mode", "dark-mode", "neon-mode");
+      if (mode === "light") document.body.classList.add("light-mode");
+      if (mode === "dark") document.body.classList.add("dark-mode");
+      if (mode === "neon") document.body.classList.add("neon-mode");
+      localStorage.setItem("theme", mode);
+    }
+
+    // Применение сохранённой темы при загрузке
+    window.addEventListener("DOMContentLoaded", () => {
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme) setTheme(savedTheme);
+      else setTheme("light"); // тема по умолчанию
+    });
+  </script>
 </body>
 </html>
