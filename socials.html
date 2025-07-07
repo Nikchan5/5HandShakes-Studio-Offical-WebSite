@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nikchan5 — 5HandShakes Studio Official Website</title>
+  <title>My Socials — 5HandShakes Studio</title>
 
   <!-- SEO -->
   <meta name="description" content="Official website of 5HandShakes Studio — creative indie games, code experiments, and portfolio by Nikita Ulybyshev." />
   <meta name="keywords" content="5HandShakes Studio,Eloen Dune,Nikchan5" />
   <meta name="author" content="Nikchan5" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://nikchan5.github.io/5handshakes-website/" />
+  <link rel="canonical" href="https://nikchan5.github.io/5handshakes-website/socials.html" />
 
   <!-- Social -->
   <meta property="og:title" content="5HandShakes Studio - Indie Games and Projects" />
   <meta property="og:description" content="Explore original indie games, portfolio, and development projects from Nikita Ulybyshev." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://nikchan5.github.io/5handshakes-website/" />
+  <meta property="og:url" content="https://nikchan5.github.io/5handshakes-website/socials.html" />
   <meta property="og:image" content="https://nikchan5.github.io/5handshakes-website/logo.jpg" />
 
   <meta name="twitter:card" content="summary_large_image" />
@@ -40,43 +40,47 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="games.html">Games</a></li>
       <li><a href="github.html">GitHub</a></li>
-      <li><a href="socials.html">My Socials</a></li>
+      <li><a href="socials.html" class="active">My Socials</a></li>
     </ul>
   </nav>
 </header>
 
+<div class="theme-switcher">
+  <button onclick="setTheme('light')">☀️ Light</button>
+  <button onclick="setTheme('dark')">🌙 Dark</button>
+  <button onclick="setTheme('neon')">🟢 Neon</button>
+</div>
 
-  <div class="theme-switcher">
-    <button onclick="setTheme('light')">☀️ Light</button>
-    <button onclick="setTheme('dark')">🌙 Dark</button>
-    <button onclick="setTheme('neon')">🟢 Neon</button>
-  </div>
-
-  <section id="home">
-    <h1>Welcome to 5HandShakes Studio</h1>
-    <p>Your go-to place for creative indie games and projects.</p>
+<main>
+  <section id="socials">
+    <h1>My Socials</h1>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/nikita-ylybyshev-005b252a5/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://bsky.app/profile/5handsnakes.bsky.social" target="_blank" rel="noopener">Bluesky</a></li>
+      <li><a href="https://x.com/Nikchan5Dev" target="_blank" rel="noopener">X (Twitter)</a></li>
+    </ul>
   </section>
+</main>
 
-  <footer>
-    <p>&copy; 2025 5HandShakes Studio. All rights reserved.</p>
-  </footer>
+<footer>
+  <p>&copy; 2025 5HandShakes Studio. All rights reserved.</p>
+</footer>
 
-  <!-- Theme Switcher Script -->
-  <script>
-    function setTheme(mode) {
-      document.body.classList.remove("light-mode", "dark-mode", "neon-mode");
-      if (mode === "light") document.body.classList.add("light-mode");
-      if (mode === "dark") document.body.classList.add("dark-mode");
-      if (mode === "neon") document.body.classList.add("neon-mode");
-      localStorage.setItem("theme", mode);
-    }
+<!-- Theme Switcher Script -->
+<script>
+  function setTheme(mode) {
+    document.body.classList.remove("light-mode", "dark-mode", "neon-mode");
+    if (mode === "light") document.body.classList.add("light-mode");
+    if (mode === "dark") document.body.classList.add("dark-mode");
+    if (mode === "neon") document.body.classList.add("neon-mode");
+    localStorage.setItem("theme", mode);
+  }
 
-    // Применение сохранённой темы при загрузке
-    window.addEventListener("DOMContentLoaded", () => {
-      const savedTheme = localStorage.getItem("theme");
-      if (savedTheme) setTheme(savedTheme);
-      else setTheme("light"); // тема по умолчанию
-    });
-  </script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) setTheme(savedTheme);
+    else setTheme("light");
+  });
+</script>
 </body>
 </html>
